@@ -2,8 +2,8 @@
 Play Zelda's Lullaby through the transmitter pin (D0), to a speaker. 
 
 ## Materials
-Uno D1 R3 8266 WiFi board
+Uno D1 R3 8266 WiFi board</br>
 Speaker from a Sagem My V-55
 
 ### Demo
-![Demo](/media/Demo480p.mov)
+![Demo](/media/Demo.png)
