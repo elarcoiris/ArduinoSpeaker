@@ -1,10 +1,5 @@
 #include <Arduino.h>
 
-/* 
-  Zelda's Lullaby 
-  More songs available at https://github.com/robsoncouto/arduino-songs                                            
-*/
-
 #define NOTE_B0  31
 #define NOTE_C1  33
 #define NOTE_CS1 35
@@ -106,11 +101,11 @@ int buzzer = 1;
 // notes of the moledy followed by the duration.
 // a 4 means a quarter note, 8 an eighteenth , 16 sixteenth, so on
 // !!negative numbers are used to represent dotted notes,
-// so -4 means a dotted quarter note, that is, a quarter plus an eighteenth!!
+// so -4 means a dotted quarter note, that is, a quarter plus an eighteenth!
 int melody[] = {
   
-  // Zelda's Lullaby - The Legend of Zelda Ocarina of Time. 
   // Score available at https://musescore.com/user/12754451/scores/2762776
+  // More songs available at https://github.com/robsoncouto/arduino-songs
   
   NOTE_E4,2, NOTE_G4,4,
   NOTE_D4,2, NOTE_C4,8, NOTE_D4,8, 
@@ -157,7 +152,7 @@ void setup() {
       // regular note, just proceed
       noteDuration = (wholenote) / divider;
     } else if (divider < 0) {
-      // dotted notes are represented with negative durations!!
+      // dotted notes are represented with negative durations!
       noteDuration = (wholenote) / abs(divider);
       noteDuration *= 1.5; // increases the duration in half for dotted notes
     }
