@@ -1,5 +1,5 @@
 # WeMos D1 R3
-Play Zelda's Lullaby through the transmitter pin (D0), to a speaker. 
+Play a tune via transmitter pin (D0), to speaker. 
 
 ## Materials
 Uno D1 R3 8266 WiFi board</br>
